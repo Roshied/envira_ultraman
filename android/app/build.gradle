@@ -21,6 +21,10 @@ def flutterVersionName = localProperties.getProperty('flutter.versionName')
 if (flutterVersionName == null) {
     flutterVersionName = '1.0'
 }
+apply plugins:'com.android.application'
+apply plugins:'kotlin-android'
+apply from:"$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
+apply plugins:("com.google.gms.google-services")
 
 android {
     namespace "com.ultraman.envira_ultraman"
