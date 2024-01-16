@@ -1,3 +1,5 @@
+import 'package:envira_ultraman/firebase_auth_services.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:envira_ultraman/mulai.dart';
 
@@ -11,6 +13,22 @@ class register extends StatefulWidget {
 }
 
 class _registerState extends State<register> {
+
+
+
+
+  @override
+  void dispose() {
+
+    super.dispose();
+  }
+
+  final TextEditingController _usernamecontroller = TextEditingController();
+  final TextEditingController _passwordcontroller = TextEditingController();
+  final TextEditingController _emailcontroller = TextEditingController();
+  final TextEditingController _phonenumbercontroller = TextEditingController();
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,6 +46,7 @@ class _registerState extends State<register> {
                 ),
               ),
               TextField(
+                controller: _usernamecontroller,
                 decoration: const InputDecoration(
                   hintText: 'ex: Joko Susanto',
                   labelText: 'Nama Pengguna',
@@ -40,7 +59,7 @@ class _registerState extends State<register> {
               ),
               TextField(
                 decoration: const InputDecoration(
-                  hintText: 'ex: Joko Susanto',
+                  hintText: 'ex: Joko',
                   labelText: 'Nama depan',
                 ),
                 onChanged: (String value) {
@@ -51,7 +70,7 @@ class _registerState extends State<register> {
               ),
               TextField(
                 decoration: const InputDecoration(
-                  hintText: 'ex: Joko Susanto',
+                  hintText: 'ex: Susanto',
                   labelText: 'Nama Belakang',
                 ),
                 onChanged: (String value) {
@@ -61,8 +80,9 @@ class _registerState extends State<register> {
                 },
               ),
               TextField(
+                controller: _phonenumbercontroller,
                 decoration: const InputDecoration(
-                  hintText: 'ex: Joko Susanto',
+                  hintText: 'ex: 0812345678987',
                   labelText: 'Nomor Telepon',
                 ),
                 onChanged: (String value) {
@@ -72,8 +92,9 @@ class _registerState extends State<register> {
                 },
               ),
               TextField(
+                controller: _emailcontroller,
                 decoration: const InputDecoration(
-                  hintText: 'ex: Joko Susanto',
+                  hintText: 'ex: wololoyoman123@gmail.com',
                   labelText: 'E-mail',
                 ),
                 onChanged: (String value) {
@@ -83,8 +104,9 @@ class _registerState extends State<register> {
                 },
               ),
               TextField(
+                controller: _passwordcontroller,
                 decoration: const InputDecoration(
-                  hintText: 'ex: Joko Susanto',
+                  hintText: 'ex: 12345678',
                   labelText: 'Buat Kata Sandi',
                 ),
                 onChanged: (String value) {
@@ -101,15 +123,21 @@ class _registerState extends State<register> {
                 ),
               ),
               ElevatedButton(
-                child: const Text('Masuk'),
+                child: const Text('Buat Akun'),
                 onPressed: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context){
-                    return mulai();
-                  }));
+                 FirebaseAuth.instance.createUserWithEmailAndPassword(email: _emailcontroller.text, password: _passwordcontroller.text).then((value){
+                   Navigator.push(context, MaterialPageRoute(builder: (context){
+                     return mulai();
+                 }));
+
+                  });
                 },),
             ],
           )
       ),
     );
   }
-}
+
+    
+
+  }
