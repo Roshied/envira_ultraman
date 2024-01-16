@@ -60,7 +60,7 @@ class _loginState extends State<login> {
                   child: const Text('Masuk'),
                   onPressed: (){
                     Navigator.push(context, MaterialPageRoute(builder: (context){
-                      return MapPage();
+                      return SearchMap();
                     }));
                   },),
             ],
