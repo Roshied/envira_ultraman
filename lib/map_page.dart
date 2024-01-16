@@ -1,6 +1,4 @@
 import 'dart:async';
-import 'dart:collection';
-import 'dart:ffi';
 import 'package:flutter/material.dart';
 import 'package:flutter_google_places_hoc081098/flutter_google_places_hoc081098.dart';
 import 'package:flutter_polyline_points/flutter_polyline_points.dart' as point;
@@ -138,12 +136,12 @@ class _SearchMapState extends State<SearchMap> {
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-            icon: Icon(Icons.local_hospital_rounded),
-            label: 'Kesehatan',
+            icon: Icon(Icons.map_rounded),
+            label: 'Peta',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.account_circle_rounded),
-            label: 'Profile',
+            icon: Icon(Icons.local_hospital_rounded),
+            label: 'Kesehatan',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.settings),
