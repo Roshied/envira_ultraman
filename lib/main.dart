@@ -1,8 +1,19 @@
 import 'package:envira_ultraman/mulai.dart';
-import 'package:envira_ultraman/register.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:envira_ultraman/login.dart';
-void main() {
+
+  void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+      options: const FirebaseOptions(
+          apiKey: "AIzaSyC2uqHDheS4TN85_-oif8Og9zmi0DeWh6s",
+          appId: "1:420211615063:android:d0703ccc2cd64a15bdca12",
+          messagingSenderId: "420211615063",
+          projectId: "projectId"
+      )
+  );
+
+
   runApp(const MyApp());
 }
 

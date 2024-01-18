@@ -40,7 +40,7 @@ class _loginState extends State<login> {
               ),
               TextField(
                 decoration: const InputDecoration(
-                  hintText: 'ex: Joko Susanto',
+                  hintText: 'ex: asdfghy123',
                   labelText: 'Kata Sandi',
                 ),
                 onChanged: (String value) {
