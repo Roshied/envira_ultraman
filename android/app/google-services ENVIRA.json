@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "420211615063",
+    "project_id": "ultraman-1c3fe",
+    "storage_bucket": "ultraman-1c3fe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:420211615063:android:439fe37b66c9465ebdca12",
+        "android_client_info": {
+          "package_name": "com.mycompany.envira1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2uqHDheS4TN85_-oif8Og9zmi0DeWh6s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:420211615063:android:d8f91a44603cf74fbdca12",
+        "android_client_info": {
+          "package_name": "com.mycompany.ultraman"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2uqHDheS4TN85_-oif8Og9zmi0DeWh6s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:420211615063:android:d0703ccc2cd64a15bdca12",
+        "android_client_info": {
+          "package_name": "com.ultraman.envira_ultraman"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2uqHDheS4TN85_-oif8Og9zmi0DeWh6s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
