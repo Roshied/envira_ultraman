@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:envira_ultraman/map.dart';
+import 'package:envira_ultraman/map_page.dart';
 
 String _name = '';
 
@@ -60,7 +60,7 @@ class _loginState extends State<login> {
                   child: const Text('Masuk'),
                   onPressed: (){
                     Navigator.push(context, MaterialPageRoute(builder: (context){
-                      return Map();
+                      return SearchMap();
                     }));
                   },),
             ],

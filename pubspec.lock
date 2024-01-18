@@ -25,6 +25,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.1.1"
+  built_collection:
+    dependency: transitive
+    description:
+      name: built_collection
+      sha256: "376e3dd27b51ea877c28d525560790aee2e6fbb5f20e2f85d5081027d94e2100"
+      url: "https://pub.dev"
+    source: hosted
+    version: "5.1.1"
   characters:
     dependency: transitive
     description:
@@ -81,6 +89,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.0.6"
+  dart_either:
+    dependency: transitive
+    description:
+      name: dart_either
+      sha256: "928895b8266ac5906eb4e2993fead563a73b17fc86eec6b40172100d56ca2507"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.0"
   fake_async:
     dependency: transitive
     description:
@@ -166,6 +182,22 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  flutter_bloc_pattern:
+    dependency: transitive
+    description:
+      name: flutter_bloc_pattern
+      sha256: "76fc4e7cd79cfe770ca69a0ea8133cf1ac180ecf42e86d316db3693fcd871501"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.3.0"
+  flutter_google_places_hoc081098:
+    dependency: "direct main"
+    description:
+      name: flutter_google_places_hoc081098
+      sha256: b416afe9004d61b643d2c6467e6401960fe3102835a5df846683f47875183b0b
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.2.0"
   flutter_lints:
     dependency: "direct dev"
     description:
@@ -174,6 +206,30 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.0.3"
+  flutter_plugin_android_lifecycle:
+    dependency: transitive
+    description:
+      name: flutter_plugin_android_lifecycle
+      sha256: b068ffc46f82a55844acfa4fdbb61fad72fa2aef0905548419d97f0f95c456da
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.0.17"
+  flutter_polyline_points:
+    dependency: "direct main"
+    description:
+      name: flutter_polyline_points
+      sha256: "02699e69142f51a248d784b6e3eec524194467fca5f7c4da19699ce2368b6980"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.0"
+  flutter_provider:
+    dependency: transitive
+    description:
+      name: flutter_provider
+      sha256: "5bc7d1e9edcf364397f312b9eb901337a644a5e4a907225bcd1d7e9b020ac914"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.1.0"
   flutter_test:
     dependency: "direct dev"
     description: flutter
@@ -216,6 +272,38 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.1.1"
+  listenable_stream:
+    dependency: transitive
+    description:
+      name: listenable_stream
+      sha256: "5458276035c7eb66477c30f8eab0942e56537ba3d268172574f7af97e265e894"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.1.0"
+  location:
+    dependency: "direct main"
+    description:
+      name: location
+      sha256: "06be54f682c9073cbfec3899eb9bc8ed90faa0e17735c9d9fa7fe426f5be1dd1"
+      url: "https://pub.dev"
+    source: hosted
+    version: "5.0.3"
+  location_platform_interface:
+    dependency: transitive
+    description:
+      name: location_platform_interface
+      sha256: "8aa1d34eeecc979d7c9fe372931d84f6d2ebbd52226a54fe1620de6fdc0753b1"
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.1.2"
+  location_web:
+    dependency: transitive
+    description:
+      name: location_web
+      sha256: ec484c66e8a4ff1ee5d044c203f4b6b71e3a0556a97b739a5bc9616de672412b
+      url: "https://pub.dev"
+    source: hosted
+    version: "4.2.0"
   matcher:
     dependency: transitive
     description:
